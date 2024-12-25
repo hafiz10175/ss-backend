@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Shampad{% endblock %}
+
+{% block content %}
+ {% for note in notes %}
+  <div class="note">
+   <p>{{ note.title }}</p>
+   <p>{{ note.content }}</p>
+  </div>
+ {% endfor %}
+{% endblock %}
